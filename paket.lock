@@ -1,0 +1,6 @@
+FRAMEWORK: PORTABLE45-NET45+WIN8
+NUGET
+  remote: http://api.nuget.org/v3/index.json
+    FSharp.Data (2.3.2)
+      Zlib.Portable (>= 1.11)
+    Zlib.Portable (1.11)

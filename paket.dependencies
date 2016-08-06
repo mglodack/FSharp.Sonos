@@ -1,0 +1,6 @@
+source http://104.130.118.213/nuget
+source https://api.nuget.org/v3/index.json
+framework portable45-net45+win8
+
+nuget FSharp.Data 2.3.2
+nuget Zlib.Portable 1.11.0
