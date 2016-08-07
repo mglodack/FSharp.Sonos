@@ -1,5 +1,6 @@
 ﻿namespace FSharp.UPnP
 
+// Documentation found here: http://upnp.org/specs/av/UPnP-av-AVTransport-v1-Service.pdf
 module AVTransport =
   open FSharp.UPnP.Exceptions
 
@@ -15,10 +16,15 @@ module AVTransport =
     | Play  -> "#Play"
     | Pause -> "#Pause"
 
-  type InstanceID = InstanceID of int
+  type InstanceId = InstanceId of int
+  type Speed = Speed of int
 
-  let pause (instanceId : InstanceID) =
+  let desctructureInstanceId instanceId =
     match instanceId with
-    | InstanceID id -> id
-    | _             -> raise (GenericException "TODO: PLEASE FIX ME :)")
+    | InstanceId id -> id
+
+  let pause (instanceId : InstanceId) =
+
+
+  let play (instanceId : InstanceId) (speed : Speed)  =
 
