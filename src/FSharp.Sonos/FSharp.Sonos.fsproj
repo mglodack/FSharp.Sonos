@@ -41,6 +41,8 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\FSharp\Microsoft.Portable.FSharp.Targets" />
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="Exceptions.fs" />
+    <Compile Include="AVTransport.fs" />
     <Compile Include="Sonos.fs" />
     <Content Include="paket.references" />
   </ItemGroup>
